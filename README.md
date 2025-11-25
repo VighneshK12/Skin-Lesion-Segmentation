@@ -160,7 +160,14 @@ Where:
 * `$FOLD` – cross-validation fold (0–4)
 * `-tr ISICTrainer` – use the custom trainer defined by this repo’s patch
 
-```
 
+### All Credits goes to:
+```
+@article{peng2023u,
+  title={U-Net v2: Rethinking the Skip Connections of U-Net for Medical Image Segmentation},
+  author={Peng, Yaopeng and Sonka, Milan and Chen, Danny Z},
+  journal={arXiv preprint arXiv:2311.17791},
+  year={2023}
+}
 
 ```
