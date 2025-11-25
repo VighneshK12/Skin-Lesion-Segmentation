@@ -1,3 +1,6 @@
+Yeah I see what you mean – right now it’s a bit messy / duplicated, and the fences got confusing.
+
+Don’t worry about fixing the current one line-by-line. Easiest is: **replace the entire README with this exact text** 👇
 
 ````markdown
 # Skin Lesion Segmentation with nnU-Net v2 (ISIC)
@@ -13,58 +16,72 @@ on ISIC skin lesion segmentation data.
 
 ---
 
-## 1) Clone repo + create environment
-
-### Linux / macOS
+## 1) Clone repo
 
 ```bash
 git clone https://github.com/VighneshK12/Skin-Lesion-Segmentation.git
 cd Skin-Lesion-Segmentation
+````
 
+---
+
+## 2) Create environment & install dependencies
+
+### Linux / macOS
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 
-# install torch first (user can adjust CUDA version)
+# install torch first (user can adjust CUDA / CPU build)
 # Example: CUDA 11.8 build
 pip install --index-url https://download.pytorch.org/whl/cu118 torch torchvision
 
 # then project deps
 pip install --upgrade pip
 pip install -r requirements.txt
-````
+```
 
 ### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/VighneshK12/Skin-Lesion-Segmentation.git
-cd Skin-Lesion-Segmentation
-
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
 # choose correct torch build (GPU or CPU-only)
 pip install --index-url https://download.pytorch.org/whl/cu118 torch torchvision
+
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 ---
 
-## 2) Apply the ISICTrainer patch
+## 3) Apply the ISICTrainer patch
 
 ```bash
 # env already activated
 python scripts/apply_isic_patch.py
 ```
 
+This copies `patches/ISICTrainer.py` into the installed `nnUNetv2` package and removes any stale `.pyc`.
+
 ---
 
-## 3) Datasets: raw + preprocessed layout
+## 4) Prepare nnU-Net folders & datasets
 
-* Download **raw ISIC data** (link…).
-* Download **preprocessed ISIC nnU-Net data** (link…).
+1. Download **raw ISIC data** (link here).
+2. Download **preprocessed ISIC nnU-Net data** (link here – recommended).
 
-Create the following layout:
+Choose a base directory for all nnU-Net data, e.g. `/path/to/nnunet_data`:
+
+```bash
+mkdir -p /path/to/nnunet_data/nnUNet_raw
+mkdir -p /path/to/nnunet_data/nnUNet_preprocessed
+mkdir -p /path/to/nnunet_data/nnUNet_results
+```
+
+Target layout:
 
 ```text
 /path/to/nnunet_data/
@@ -75,17 +92,9 @@ Create the following layout:
   nnUNet_results/
 ```
 
-**Recommended:** use the **preprocessed** archive (faster to start).
-**Optional:** you can regenerate preprocessing from raw.
-
-Example unzip instructions (Linux):
+Example unzip commands (Linux):
 
 ```bash
-# Create the three standard nnU-Net folders
-mkdir -p /path/to/nnunet_data/nnUNet_raw
-mkdir -p /path/to/nnunet_data/nnUNet_preprocessed
-mkdir -p /path/to/nnunet_data/nnUNet_results
-
 # raw
 unzip ISIC_raw_Dataset201.zip -d /path/to/nnunet_data/nnUNet_raw
 
@@ -95,9 +104,9 @@ unzip ISIC_preprocessed_Dataset201.zip -d /path/to/nnunet_data/nnUNet_preprocess
 
 ---
 
-## 4) Set nnU-Net environment variables
+## 5) Set nnU-Net environment variables
 
-These env vars must be set in the same shell where you run `nnUNetv2_*` commands.
+These must be set in the same shell where you run `nnUNetv2_*` commands.
 
 ### Linux / macOS (bash/zsh)
 
@@ -117,7 +126,7 @@ $env:nnUNet_results="C:\path\to\nnunet_data\nnUNet_results"
 
 ---
 
-## 5) Optional: run preprocessing from raw
+## 6) (Optional) Re-run preprocessing from raw
 
 ```bash
 # env activated and nnUNet_* variables set
@@ -129,9 +138,9 @@ nnUNetv2_plan_and_preprocess -d 201 -c 2d --verify_dataset_integrity
 
 ---
 
-## 6) Training with ISICTrainer (main command)
+## 7) Training with ISICTrainer
 
-Once env, data, and patch are ready, this is the core command:
+Once env, data, and patch are ready, use:
 
 ### Single fold example (fold 0, 2D config)
 
@@ -156,5 +165,5 @@ Where:
 
 ```
 
-If you want, next step we can add a small “Results & Reproducibility” section with your Dice/IoU table and which fold/settings produced them.
+
 ```
