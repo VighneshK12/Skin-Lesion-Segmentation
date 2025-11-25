@@ -161,7 +161,7 @@ Where:
 * `-tr ISICTrainer` – use the custom trainer defined by this repo’s patch
 
 
-### All Credits goes to:
+### All Credits go to:
 ```
 @article{peng2023u,
   title={U-Net v2: Rethinking the Skip Connections of U-Net for Medical Image Segmentation},
