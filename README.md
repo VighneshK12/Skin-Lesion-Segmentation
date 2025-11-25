@@ -1,5 +1,5 @@
 
-````markdown
+
 # Skin Lesion Segmentation with nnU-Net v2 (ISIC)
 
 This repo contains the configuration and trainer patch used to train nnU-Net v2
@@ -22,7 +22,7 @@ cd Skin-Lesion-Segmentation
 
 ---
 ```
-## 2) Create environment & install dependencies
+### 2) Create environment & install dependencies
 
 ### Linux / macOS
 
