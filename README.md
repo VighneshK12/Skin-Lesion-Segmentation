@@ -18,10 +18,10 @@ on ISIC skin lesion segmentation data.
 ```bash
 git clone https://github.com/VighneshK12/Skin-Lesion-Segmentation.git
 cd Skin-Lesion-Segmentation
-````
+```
 
 ---
-```
+
 ### 2) Create environment & install dependencies
 
 ### Linux / macOS
