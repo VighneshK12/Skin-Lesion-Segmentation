@@ -36,7 +36,7 @@ pip install --index-url https://download.pytorch.org/whl/cu118 torch torchvision
 
 # then project deps
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r requirements.txt -c constraints.txt
 ```
 
 ### Windows (PowerShell)
@@ -49,7 +49,7 @@ py -m venv .venv
 pip install --index-url https://download.pytorch.org/whl/cu118 torch torchvision
 
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r requirements.txt -c constraints.txt
 ```
 
 ---
