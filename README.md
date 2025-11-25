@@ -1,6 +1,3 @@
-Yeah I see what you mean – right now it’s a bit messy / duplicated, and the fences got confusing.
-
-Don’t worry about fixing the current one line-by-line. Easiest is: **replace the entire README with this exact text** 👇
 
 ````markdown
 # Skin Lesion Segmentation with nnU-Net v2 (ISIC)
@@ -24,7 +21,7 @@ cd Skin-Lesion-Segmentation
 ````
 
 ---
-
+```
 ## 2) Create environment & install dependencies
 
 ### Linux / macOS
