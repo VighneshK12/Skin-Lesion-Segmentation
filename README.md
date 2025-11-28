@@ -13,6 +13,57 @@ on ISIC skin lesion segmentation data.
 
 ---
 
+## Datasets & Results (Google Drive)
+
+We use three ISIC datasets plus our nnU-Net results, all shared via Google Drive
+in nnU-Net–compatible directory format.
+
+Each **dataset link** below contains:
+
+- `nnUNet_raw/DatasetXXX_...` (raw images/labels)
+- `nnUNet_preprocessed/DatasetXXX_...` (output of `nnUNetv2_plan_and_preprocess`)
+
+The **results link** contains:
+
+- `nnUNet_results/` (trained models, plans, and predictions)
+
+**ISIC 2018 (Dataset202_ISIC2018)**  
+- Datasets (raw + preprocessed):  
+ Raw:  https://drive.google.com/file/d/1XjoQRKjURPw_Tab8p9v6iJBICzx9CgUX/view?usp=sharing
+ Preprocessed https://drive.google.com/file/d/1EOtp89GqDlVAFypJjZMfHh5qnqBjrjAF/view?usp=sharing
+
+**ISIC 2017 (Dataset201_ISIC)**  
+- Datasets (raw + preprocessed):  
+  Raw https://drive.google.com/drive/folders/1Q8VQXhQd5T4Z7kS2SnqygedtYSJSSN75
+  Preprocessed https://drive.google.com/drive/folders/1Q8VQXhQd5T4Z7kS2SnqygedtYSJSSN75
+
+**ISIC 2016 (Dataset203_ISIC2016 — additional dataset)**  
+- Datasets (raw + preprocessed):  
+  Raw:  https://drive.google.com/file/d/1TtBHwDZmp-H_7l1IW3E1JebEHA_B5cCG/view?usp=sharing
+  Preprocessed
+
+**nnU-Net Results (all datasets)**  
+- All trained folds / experiments:  
+  Results 
+
+> After downloading, unzip the folders so that you end up with:
+>
+> ```text
+> /path/to/nnunet_data/
+>   nnUNet_raw/
+>     Dataset201_ISIC/
+>     Dataset202_ISIC2018/
+>     Dataset203_ISIC2016/
+>   nnUNet_preprocessed/
+>     Dataset201_ISIC/
+>     Dataset202_ISIC2018/
+>     Dataset203_ISIC2016/
+>   nnUNet_results/
+>     ... (contents from results zip)
+> ```
+
+---
+
 ## 1) Clone repo
 
 ```bash
