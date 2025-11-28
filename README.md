@@ -30,17 +30,21 @@ The **results link** contains:
 **ISIC 2018 (Dataset202_ISIC2018)**  
 - Datasets (raw + preprocessed):  
  Raw:  https://drive.google.com/file/d/1XjoQRKjURPw_Tab8p9v6iJBICzx9CgUX/view?usp=sharing
+
+
  Preprocessed https://drive.google.com/file/d/1EOtp89GqDlVAFypJjZMfHh5qnqBjrjAF/view?usp=sharing
 
 **ISIC 2017 (Dataset201_ISIC)**  
 - Datasets (raw + preprocessed):  
   Raw https://drive.google.com/drive/folders/1Q8VQXhQd5T4Z7kS2SnqygedtYSJSSN75
+
   Preprocessed https://drive.google.com/drive/folders/1Q8VQXhQd5T4Z7kS2SnqygedtYSJSSN75
 
 **ISIC 2016 (Dataset203_ISIC2016 — additional dataset)**  
 - Datasets (raw + preprocessed):  
   Raw:  https://drive.google.com/file/d/1TtBHwDZmp-H_7l1IW3E1JebEHA_B5cCG/view?usp=sharing
-  Preprocessed
+
+  Preprocessed https://drive.google.com/file/d/1-qSe6HSmYWKTqvSjZ5dwRnXpj16Cqm6L/view?usp=sharing
 
 **nnU-Net Results (all datasets)**  
 - All trained folds / experiments:  
