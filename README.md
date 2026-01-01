@@ -29,27 +29,25 @@ The **results link** contains:
 
 **ISIC 2018 (Dataset202_ISIC2018)**  
 - Datasets (raw + preprocessed):  
- Raw:  https://drive.google.com/file/d/1XjoQRKjURPw_Tab8p9v6iJBICzx9CgUX/view?usp=sharing
+ Raw:  
 
-
- Preprocessed https://drive.google.com/file/d/1EOtp89GqDlVAFypJjZMfHh5qnqBjrjAF/view?usp=sharing
+ Preprocessed 
 
 **ISIC 2017 (Dataset201_ISIC)**  
 - Datasets (raw + preprocessed):  
-  Raw https://drive.google.com/drive/folders/1Q8VQXhQd5T4Z7kS2SnqygedtYSJSSN75
+  Raw 
 
-  Preprocessed https://drive.google.com/drive/folders/1Q8VQXhQd5T4Z7kS2SnqygedtYSJSSN75
+  Preprocessed 
 
 **ISIC 2016 (Dataset203_ISIC2016 — additional dataset)**  
 - Datasets (raw + preprocessed):  
-  Raw:  https://drive.google.com/file/d/1TtBHwDZmp-H_7l1IW3E1JebEHA_B5cCG/view?usp=sharing
+  Raw: 
 
-  Preprocessed https://drive.google.com/file/d/1-qSe6HSmYWKTqvSjZ5dwRnXpj16Cqm6L/view?usp=sharing
+  Preprocessed 
 
 **nnU-Net Results (all datasets)**  
 - All trained folds / experiments:  
-  Results  https://drive.google.com/file/d/18Svu3Bt9l39qFIhDcf-J3tgVf-oiIJKC/view?usp=sharing
-
+  Results  
 > After downloading, unzip the folders so that you end up with:
 >
 > ```text
